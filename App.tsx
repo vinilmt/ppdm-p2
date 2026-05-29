@@ -130,7 +130,7 @@ export default function App() {
               ?
               <Image
                 source={{ uri: item.flags.png }}
-                style={styles.flag}
+                style={styles.image}
               />
               : null}
           </View>
@@ -141,18 +141,72 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  button: {
-  },
-  buttonText: {
-  },
   container: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '#F5F5F5',
+    paddingTop: 48,
+    paddingHorizontal: 16,
   },
-  flag: {
+
+  input: {
+    backgroundColor: '#FFFFFF',
+    borderColor: '#D1D5DB',
+    borderWidth: 1,
+    borderRadius: 8,
+    color: '#111827',
+    fontSize: 15,
+    marginBottom: 10,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    width: '100%',
   },
-  input: {},
-  list: {},
+
+  button: {
+    width: '100%',
+    backgroundColor: '#0077CC',
+    paddingVertical: 13,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    marginBottom: 10,
+  },
+
+  buttonText: {
+    color: '#FFFFFF',
+    textAlign: 'center',
+    fontSize: 15,
+    fontWeight: '600',
+  },
+
+  list: {
+    width: '100%',
+    marginTop: 12,
+    borderRadius: 8,
+    overflow: 'hidden',
+    borderColor: '#E5E7EB',
+    borderWidth: 1,
+  },
+
   listEntry: {
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E5E7EB',
+    backgroundColor: '#FFFFFF',
+    flexDirection: 'column',
+    gap: 4,
   },
+
   listEntryText: {
+    fontSize: 14,
+    color: '#374151',
+    lineHeight: 20,
+  },
+
+  image: {
+    width: 160,
+    height: 106,
+    borderRadius: 4,
+    marginTop: 4,
   },
 });
